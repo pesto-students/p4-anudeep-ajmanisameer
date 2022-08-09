@@ -45,10 +45,8 @@ const caffeine = {
     return roast + " " + this.ingre1 + " " + this.ingre2 
   }
 }
-
 const americano = {
   ingre1: "Grinded coffee",
   ingre2: "Warm Water"
 }
-
 console.log(caffeine.getAmericano.apply(americano, ["Dark Roast"]))
