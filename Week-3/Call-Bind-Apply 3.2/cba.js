@@ -17,7 +17,6 @@ console.log(new hotCoffee('Americano', 67).name)
 
 
 
-
 // Bind
 // Changes the value of this in a function
 // by creating a bound fn which can be stored for later use
