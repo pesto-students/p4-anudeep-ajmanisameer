@@ -1,1 +1,77 @@
 
+# Practice Mock interviews (https://www.pramp.com/#/)
+# Leet Code 1 a day
+
+# Complete week 5 by tomorrow
+
+# In 10 days JS mock interview
+
+
+# Custom promise
+
+# Finance Sharan check mails
+
+Sun
+  50% of week 5 
+  Leet Code 1 
+  Rewise JS
+Mon
+  100% of week 5 
+  Leet Code 1 
+  Rewise JS
+Tue
+  Leet Code 1 
+  DSA 30%
+  Rewise JS
+Wed 
+  Leet Code 1 
+  DSA 60%
+  Rewise JS
+Thu
+  Leet Code 1 
+  DSA 60%
+  Rewise JS
+Fri
+  Leet Code 1 
+  DSA 90%
+  Rewise JS
+Sat
+  Leet Code 1 
+  DSA 100%
+  Rewise JS
+
+
+
+5.1 Promise.all
+
+
+
+Important for React (JS)
+  OOPS
+  this
+  call/ bind / apply
+  spread operator
+  promise / usage of promise .then cathc finally
+  callbacks
+  closure *
+  memoise *
+  localstorage *
+  Hoisting *
+
+  generators iterators
+  map, forEach, filter , reduce
+  Dom manupulation
+  destructuring
+
+
+----------------------------------------
+
+# Generators
+  - Returns multiple output
+  - Output will always be wrapped as an object
+  - have a * to identify
+
+  `code` 
+  function* gen(){
+    console.log(started)
+  }
