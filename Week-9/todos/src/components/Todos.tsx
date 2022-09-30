@@ -5,11 +5,11 @@ import React, { useState } from 'react'
 const DUMMY_TODO = [
   {
     id: 1,
-    todo: "lorem ipusun varten ispagol"
+    todo: "Dummy Todo One"
   },
   {
     id: 2,
-    todo: "Second todo"
+    todo: "Dummy Todo Two"
   }
 ]
 
