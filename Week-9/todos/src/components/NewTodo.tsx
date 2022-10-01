@@ -9,14 +9,19 @@ const NewTodo = (props: any) => {
   }
 
   const submitHandler = (event: any) => {
+
     event.preventDefault()
-    const todoData = {
-      id: Math.random().toString(),
-      todo: enteredTodo
+    if (enteredTodo !== '') {
+      const todoData = {
+        id: Math.random().toString(),
+        todo: enteredTodo,
+        checked: false
+      }
+      console.log(todoData)
+      props.onSaveTodo(todoData)
+      setEnteredTodo('')
     }
-    console.log(todoData)
-    props.onSaveTodo(todoData)
-    setEnteredTodo('')
+
   }
 
 
@@ -25,13 +30,16 @@ const NewTodo = (props: any) => {
       <form onSubmit={submitHandler}>
         <div className='new-todo__controls'>
           <div className='new-todo__control'>
-            <label>Add New</label>
+            {/* <label>Add New</label>  */}
             <input type="text" value={enteredTodo} onChange={todoChangeHandler} />
           </div>
+          <div className='new-todo__control'>
+            <button type='submit'>Add Todo</button>
+          </div>
         </div>
-        <div className='new-todo__actions'>
+        {/* <div className='new-todo__actions'>
           <button type='submit'>Add Todo</button>
-        </div>
+        </div> */}
       </form>
     </div>
   );

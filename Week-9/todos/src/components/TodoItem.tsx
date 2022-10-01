@@ -2,9 +2,18 @@ import './TodoItem.css'
 import React, { useState } from 'react'
 
 const TodoItem = (props: any) => {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(props.checked);
 
   const handleChange = () => {
+
+    let todos = JSON.parse(localStorage.getItem('todos') || '[]')
+    todos.forEach((todo:any) => {
+      if(todo.id == props.id){
+        todo.checked = !todo.checked
+      }
+    })
+    localStorage.setItem('todos', JSON.stringify(todos))
+
     setChecked(!checked)
   }
 
