@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -8,9 +8,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Link from '@mui/material/Link';
+import  ShortlyContext  from '../_store/shortly-context';
 
 const ShortlyTable = (props) => {
-  const [data, setData] = useState(props.links)
+  const shortlyCtx = useContext(ShortlyContext)
 
   return (<>
     <TableContainer component={Paper}>
@@ -22,7 +23,7 @@ const ShortlyTable = (props) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((el) => (
+          {shortlyCtx.catchedLists.map((el) => (
             <TableRow
               key={el.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
