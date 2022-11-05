@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container  {
+  text-align: center;
+}
+
+.container > h1 {
+  font-size: 40px;
+}
+
+.divider {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#articles {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+
+}
+
+#articles .container .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.article-container{
+  width: 50%;
+}
+
+.form{
+  margin: 20px;
+  padding: 20px
+}
+.article {
+  padding: 15px;
+}
+
+#footer{
+ width: 100%;
+ background-color: rgb(228, 228, 228);
+}
+
+#footer .container {
+  padding: 20px
+  
+}
+
+
+#footer .container h4 {
+  text-align: center;
+}
