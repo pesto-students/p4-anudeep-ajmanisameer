@@ -39,33 +39,15 @@ const Shortly = () => {
       .then(data => {
         if (data.ok) {
           setShortyLink(data.result.short_link)
-          fetch(`${infoUrl}${data.result.code}`)
-            .then(res => res.json())
-            .then(data1 => {
-              if (data1.ok) {
-                //   newShortly()
-                let obj = {
-                  id: Math.random().toString(),
-                  link: link,
-                  generatedLink: data1.result.url,
-                  short_link: data.result.short_link
-                }
-                newShortly(obj)
-                setGeneratedLink(data1.result.url)
-                setLoading(false)
-              } else {
-                // error block
-                setError('Server responds with error!')
-                setLoading(false)
-                setTimeout(() => {
-                  setError('')
-                }, 3000);
-              }
-            })
-          // .catch(error => {
-          //   setError('Server responds with error!')
-          //   setLoading(false)
-          // })
+
+          let obj = {
+            id: Math.random().toString(),
+            link: link,
+            short_link: data.result.short_link
+          }
+          newShortly(obj)
+          setGeneratedLink(link)
+          setLoading(false)
         }
         else {
           // error block

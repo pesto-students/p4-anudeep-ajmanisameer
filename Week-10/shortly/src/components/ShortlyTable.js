@@ -31,7 +31,7 @@ const ShortlyTable = (props) => {
               <TableCell component="th" scope="row">
                 {el.link}
               </TableCell>
-              <TableCell align="right"><Link href={el.generatedLink}> {el.short_link}</Link>  </TableCell>
+              <TableCell align="right"><Link href={el.link}> {el.short_link}</Link> </TableCell>
             </TableRow>
           ))}
         </TableBody>
