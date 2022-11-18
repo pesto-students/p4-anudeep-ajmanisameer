@@ -1,1 +1,93 @@
+JavaScript
 
+1.1
+1. Expression vs Statement
+  Statement `do things` - var x; Expression `produces value` - 3 * 6
+2. Variables vs Assignment
+
+
+1.2
+Primitive Value vs Object Values
+  Boolean/ Number/ String/ null and undefined are only primitive values but also can behave like Object (but not the other way)
+
+undefined and null
+  undefined means no value; non existing, uninitialized, missing parameter
+  null - no object || typeof null is object
+
+-----------------------
+
+**Functional vs Object-Oriented vs Procedural Programming in JS**
+
+Imperative and Declarative Pradigm
+
+Procedural -> Step by Step series of steps but no functions and logics
+OOP -> 
+# Encapsulation
+# Flexibility through Polymorphism
+# Inheritence
+# Polymorphism
+# Abstraction
+
+Functional -> Stateless / Pure/ Sideeffect free/ highly reusable
+
+'' == '0'           //false
+0 == ''             //true
+0 == '0'            //true
+null == undefined   //true
+
+What is a prototype?
+array.prototype
+object.prototype
+
+-----------------------
+
+
+**1.4 Static vs Dynamically typed langauge**
+
+  Coercion
+  Inplicit
+  String.length -> turns into an object for a split second returns value nd back to staring (autoboxing)
+
+
+# CLOSURE - function returned along with its lexical scope forms a closure
+(remembering the parents scope even if the parent dosent exist)
+
+Lexical env - static scope (shadowing)
+  
+function x(){
+  var a =7;
+  function y(){
+    console.log(a);
+  }
+  y()
+}
+x()
+
+Assign a variable to a function
+pass as a argument as a function
+return a functon as a function
+
+# IIFI
+ 
+
+# Memoize
+   catching the program result called by a function and returning when same input is occured again
+
+# `This`
+  Not a compile time binding but a run time binding
+
+  Noting to do with where the function is declared but how it is invoked/called
+
+
+
+------------
+  GD
+  - Pillars of JS
+  - Currying
+  - Closure (achieving encapsulation in JS)
+  - Abstraction vs encapsulation
+
+Getters Setters
+
+Promises IMP
+Scopes in JS
